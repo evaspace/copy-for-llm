@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Fixture</title></head>
+<body>
+<div id="statement">
+  <p>Compute <span class="katex"><span class="katex-mathml"><math><semantics><mrow></mrow><annotation encoding="application/x-tex">\int_0^1 x\,dx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true">∫01xdx</span></span> and <strong>justify</strong>.</p>
+  <span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow></mrow><annotation encoding="application/x-tex">a &lt; b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true">a&lt;b</span></span></span>
+  <ol><li>first</li><li>second <em>one</em></li></ol>
+  <p>MathJax 2: <span class="MathJax_Preview"></span><span class="MathJax">junk</span><script type="math/tex">x^2</script>
+     and <span data-tex="\frac12">½</span></p>
+  <table><tr><th>x</th><th>f</th></tr><tr><td>0</td><td>1 | 2</td></tr></table>
+  <button>ignored</button><span data-copy-ignore>ignored too</span>
+</div>
+<section id="solution" hidden><p>secret</p></section>
+<button id="go" data-copy-llm="#statement|Exercise; #solution|Solution" data-copy-title="Ex 1">Copy</button>
+<script src="../copy-for-llm.js"></script>
+<script>CopyForLLM.config({ prompt: 'Explain {title}.', footer: 'Source: {url}' });</script>
+</body>
+</html>
